@@ -1,5 +1,5 @@
 # bower
-#bower_components/
+bower_components/
 
 # Windows image file caches
 Thumbs.db
@@ -50,3 +50,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Node
+node_modules
+package-lock.json
+
+# dist
+dist/

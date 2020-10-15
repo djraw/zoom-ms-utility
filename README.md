@@ -1,18 +1,50 @@
 # zoom-ms-utility
-Online Zoom MS-50G/MS-60B/MS-70CDR multi stomp patch editor.
+Zoom MS-50G/MS-60B/MS-70CDR multi stomp patch editor.
 
-This is a patch utility for the ZOOM MS - 50G / 60B / 70 CDR MultiStomp guitar pedal which runs on the chrome browser.  
+This is a patch utility for the ZOOM MS - 50G / 60B / 70 CDR MultiStomp guitar pedal.  
 This is still a very tentative version for the confirmation of MIDI related function.
+
+* in v1.0.2, standalone executables for Win / Mac are available. 
+
+## Install
+* **Online version** :  
+The application starts just by accessing it with **Chrome**, so installation is not required.
+
+* **Stand-alone version** :  
+
+  **Windows (x64)** :  
+  > Download and Unzip [zoom-ms-utility-1.0.2-win-x64.zip](https://www.g200kg.com/software/zoom-ms-utility/zoom-ms-utility-1.0.2-win-x64.zip)  
+  > startup executable is `ZoomMSUtility.exe` in the folder.
+
+  **Mac (x64)** : 
+  > **You should manage `GateKeeper` by yourself**.  
+  > Download and Unzip [zoom-ms-utility-1.0.2-mac-x64.zip](https://www.g200kg.com/software/zoom-ms-utility/zoom-ms-utility-1.0.2-mac-x64.zip)  
+  > Starts with `ZoomMSUtility.app` in the folder.  
 
 ## Usage
 * Connect PC/Mac to MS-50G/60B/70CDR via USB
-* Launch this page. You should use latest ***Chrome***
+* Launch this app. You should use latest ***Chrome*** for Online version
 * Press accept if 'MIDI device' dialog is displayed
 * Select MidiPort to 'ZOOM MS Series'
 
-Online Patch Editor: [Zoom MS Utility Page](https://g200kg.github.io/zoom-ms-utility/)
+## TECH NOTE : For build standalone packages
+* The standalone versions are packaged using `NW.JS`
+* Create dist-files with `npm run dist`.
 
-## To Use this tool in offline
+## Offline mode
+For windows, the standalone version is recommended for offline use.
+On mac, you need to manage GateKeeper yourself to launch the standalone version. Or build it yourself or use the following offline modes.
+
+### Via Node.js
+
+Standard Node.js workflow, clone this repo and run:
+```bash
+npm install
+npm start
+```
+As per the output, open a Browser and visit (http://localhost:3000)[http://localhost:3000]
+
+### Via Other local web servers
 
 This tool will not work if you just open the local html file by Chrome because of file access security limitation. There are several ways to use this tool in an offline environment.
 
@@ -36,6 +68,7 @@ This tool will not work if you just open the local html file by Chrome because o
   Note that this method will not work if the Chrome instance is already exist. You should close all Chrome window before launch.
 
 ## History
+* v1.0.2 add standalone version
 * v1.0.1 Fix behavior when click a switch
 
 ## Info
